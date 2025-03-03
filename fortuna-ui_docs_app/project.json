@@ -1,0 +1,42 @@
+{
+  "name": "documentation-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "fortuna-ui_docs_app/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/fortuna-ui_docs_app"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "documentation-app:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "documentation-app:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "documentation-app:build:production",
+          "hmr": false
+        }
+      }
+    }
+  }
+}

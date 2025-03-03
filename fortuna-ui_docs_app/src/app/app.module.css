@@ -1,0 +1,45 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.component-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.component-demo {
+  margin-top: 1.5rem;
+}
+
+.button-grid {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}

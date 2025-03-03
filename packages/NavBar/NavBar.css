@@ -1,0 +1,17 @@
+.oni-navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.oni-navbar-logo {
+  margin-right: 1rem;
+}
+
+.oni-navbar-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}

@@ -1,0 +1,18 @@
+.oni-searchbar {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.oni-searchbar-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.oni-searchbar-input:focus {
+  border-color: #3182ce;
+}
